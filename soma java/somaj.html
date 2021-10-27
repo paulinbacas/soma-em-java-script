@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+  <title>java soma</title>
+
+
+    <script language="JavaScript">
+     function calcular()
+      {
+       var a, b, c, media;
+        a = parseFloat(document.frmEntrada.txtN1.value);
+        b = parseFloat(document.frmEntrada.txtN2.value);
+        c = parseFloat(document.frmEntrada.txtN3.value);
+
+
+
+          if ((a>(b+c)) || (b>(a+c)) || (c>(a+b)))
+           {
+             if((a!=b) & (a!=c) & (b!=c))
+              {
+                  document.write("isso é um triangulo escaleno.");
+              }
+
+              else if((a=b) & (a=c) & (b=c))
+              {
+                  document.write("isso é um triangulo equilatero.");
+              }
+              else
+              {
+                  document.write("isso é um triangulo isoceles");
+              }
+          }
+
+          else
+
+          {
+
+               document.write("isso não é um triangulo ");
+          }
+  
+      }
+
+  </script>
+
+</head>
+
+  <body>
+
+      <form name="frmEntrada">
+
+        Lado um:<input type="text" name="txtN1" ><br>
+        Lado dois:<input type="text" name="txtN2" ><br>
+        Lado tres:<input type="text" name="txtN3" ><br>
+
+      <input type="button" name="btnCalcular" value="Calcular" onClick="calcular()"><br>
+       </form>
+
+       <p id="alvo"></p>
+
+  </body>
+
+</html> 

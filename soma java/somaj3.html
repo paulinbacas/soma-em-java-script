@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+  
+    <title>somaj3</title>
+
+      <script language="JavaScript">
+       function calcular()
+    
+    {
+       var n1, n2, n3, n4, media;
+       n1 = parseFloat(document.frmEntrada.txtN1.value);
+       n2 = parseFloat(document.frmEntrada.txtN2.value);
+       n3 = parseFloat(document.frmEntrada.txtN3.value);
+       n4 = parseFloat(document.frmEntrada.txtN4.value);
+       media = (n1 + n2 + n3 + n4) / 4;
+         
+       //document.getElementById("alvo").innerHTML = "A soma dos n�meros � " + r + "<br>";
+  
+       document.write("A média das notas é " + media + "<br>");
+    }
+
+       </script>
+
+  </head>
+
+  <body>
+
+    <form name="frmEntrada">
+          Nota um:<input type="text" name="txtN1" ><br>
+          Nota dois:<input type="text" name="txtN2" ><br>
+          Nota tres:<input type="text" name="txtN3" ><br>
+          Nota quatro:<input type="text" name="txtN4"><br>
+          <input type="button" name="btnCalcular" value="Calcular" onClick="calcular()"><br>
+    </form>
+
+     <p id="alvo"></p>
+
+   </body>
+
+</html> 
